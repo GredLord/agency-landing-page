@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+}
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+/* common */
+.container {
+    width: 1170px;
+    max-width: calc(100% - 65px);
+    margin: 0 auto;
+}
