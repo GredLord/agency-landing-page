@@ -40,8 +40,12 @@ a {
     border-radius: 40px;
     color: #fff;
     background: #143c3c;
+    transition: 0.25s;
 }
-.btn
+.btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
 /* Logo */
 .logo {
     display: flex;
@@ -59,9 +63,24 @@ a {
     font-family: "Public Sans", sans-serif;
 }
 .header-top {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.header-top::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 70px;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(
+        90deg,
+        #ffffff 0%,
+        #dddcdc 51.09%,
+        rgba(213, 213, 213, 0) 99.68%
+    );
 }
 .header-action {
     display: flex;
@@ -77,6 +96,7 @@ a {
 }
 .navbar__item {
     display: inline-block;
+    position: relative;
 }
 .navbar__link {
     display: block;
@@ -87,9 +107,10 @@ a {
     transition: 0.25s ease;
 }
 .navbar__item-hover {
-    position: relative;
-    top: 24px;
+    z-index: 1;
+    position: absolute;
     display: none;
+    margin-top: 27px;
     width: 16px;
     height: 2px;
     background: #143c3c;
