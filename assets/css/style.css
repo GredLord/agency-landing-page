@@ -19,7 +19,7 @@ button {
 /* common */
 .container {
     width: 1170px;
-    max-width: calc(100% - 65px);
+    max-width: calc(100% - 48px);
     margin: 0 auto;
 }
 a {
@@ -46,6 +46,13 @@ a {
     opacity: 0.8;
     cursor: pointer;
 }
+.change-position {
+    position: absolute;
+}
+.extra-avstract {
+    width: 72px;
+    height: 72px;
+}
 /* Logo */
 .logo {
     display: flex;
@@ -59,8 +66,13 @@ a {
 }
 /* Header */
 .header {
-    margin-top: 28px;
+    position: sticky;
+    top: -15px;
+    z-index: 1;
+    padding-top: 28px;
+    padding-bottom: 13px;
     font-family: "Public Sans", sans-serif;
+    background-color: #fff;
 }
 .header-top {
     position: relative;
@@ -120,4 +132,81 @@ a {
 }
 .navbar__item:hover .navbar__item-hover {
     display: block;
+}
+/* Hero */
+.hero {
+    padding: 0px 0 165px;
+    font-family: "Public Sans", sans-serif;
+}
+.hero__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.hero__body {
+    padding: 103px 0 143px;
+    position: relative;
+    flex-shrink: 0;
+    text-align: left;
+}
+.hero__heading {
+    width: 368px;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+.hero__desc {
+    width: 341px;
+    margin-top: 20px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.55;
+}
+.hero__action {
+    display: flex;
+    align-items: center;
+    column-gap: 36px;
+    margin-top: 42px;
+}
+.hero__extra-avstract {
+    top: 38px;
+    right: 53.58px;
+    transform: rotate(-170.39deg);
+}
+.hero-media {
+    position: relative;
+    padding-top: 60px;
+    max-width: 646px;
+    background: url("../img/ellipse.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero__line {
+    width: 545px;
+    top: 27.93px;
+    left: -220px;
+}
+.hero-media__images {
+    display: flex;
+    column-gap: 20px;
+    height: 543px;
+}
+.hero-media__img {
+    display: inline-block;
+    max-width: 202px;
+    height: 466px;
+    border-radius: 110px;
+}
+.hero-media__img--translateY {
+    transform: translateY(77px);
+}
+.hero__line-bottom {
+    width: 545px;
+    bottom: -77px;
+    left: 31px;
+    transform: rotate(-4.05deg);
+}
+.hero-media__extra-avstract {
+    right: 25.12px;
+    bottom: -23px;
+    transform: rotate(-5.34deg);
 }
