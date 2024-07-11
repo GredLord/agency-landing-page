@@ -176,9 +176,18 @@ a {
     position: relative;
     padding-top: 60px;
     max-width: 646px;
-    background: url("../img/ellipse.png") no-repeat;
-    background-size: cover;
-    background-position: center;
+}
+.hero-media__ellipse {
+    position: absolute;
+    background: #4dbb9a;
+    width: 340px;
+    height: 340px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 340px;
+    filter: blur(135px);
+    z-index: -1;
 }
 .hero__line {
     width: 545px;
