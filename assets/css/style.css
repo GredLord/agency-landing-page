@@ -81,7 +81,7 @@ a {
 .header {
     position: sticky;
     top: -15px;
-    z-index: 1;
+    z-index: 2;
     padding-top: 28px;
     padding-bottom: 13px;
     font-family: "Public Sans", sans-serif;
@@ -634,4 +634,109 @@ a {
     font-weight: 500;
     line-height: 1.71;
     color: #7d8188;
+}
+/* Process */
+.process {
+    margin-top: 39px;
+    padding-top: 40px;
+}
+.process__title {
+    margin-top: 36px;
+}
+.process__title::before {
+    content: "";
+    position: relative;
+    top: -5px;
+    left: 7px;
+    margin-right: 21px;
+    display: inline-block;
+    width: 25px;
+    height: 1px;
+    background: #152427;
+}
+.process__heading {
+    position: relative;
+    margin-top: 20px;
+    width: 477px;
+}
+.process__heading::after {
+    content: "";
+    position: absolute;
+    right: -9px;
+    bottom: 18px;
+    display: inline-block;
+    width: 66px;
+    height: 2px;
+    background: #152427;
+}
+.process__list {
+    margin-top: 81px;
+    display: flex;
+    flex-direction: column;
+}
+.process__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 25px 41px 25px 20px;
+}
+.process__item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(
+        0deg,
+        #83a17d 4.17%,
+        rgba(131, 161, 125, 0) 36.46%
+    );
+}
+.process-block {
+    display: flex;
+    align-items: center;
+    width: 507px;
+}
+.process__auto {
+    font-size: 7.2rem;
+    font-weight: 600;
+    line-height: 0.72;
+    color: #143c3c;
+}
+.process-block___content {
+    margin-right: 175px;
+}
+.process__content {
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #152427;
+    text-align: left;
+}
+.process__desc {
+    width: 572px;
+    font-family: Public Sans;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.55;
+    color: #7d8188;
+}
+.process__link {
+    display: none;
+    margin-top: 22px;
+    margin-left: 3px;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #575d5e;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+.process__img {
+    display: none;
+    width: 450px;
+    height: 444px;
+    object-fit: cover;
 }
