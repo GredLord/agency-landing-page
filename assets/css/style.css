@@ -2,12 +2,12 @@
     box-sizing: border-box;
 }
 html {
-    scroll-behavior: smooth;
     font-size: 62.5%;
 }
 body {
     font-family: "Poppins", sans-serif;
     font-size: 1.6rem;
+    scroll-behavior: smooth;
 }
 input,
 textarea,
@@ -706,7 +706,7 @@ a {
 }
 .process__item:hover .process__link,
 .process__item:hover .process__img,
-.process__item:hover .process__rectangle-1 {
+.process__item:hover .process__rectangle {
     display: block;
 }
 .process-block {
@@ -755,7 +755,7 @@ a {
     text-decoration: underline;
     text-underline-offset: 2px;
 }
-.process__rectangle-1 {
+.process__rectangle {
     z-index: 1;
     display: none;
     position: absolute;
@@ -765,6 +765,7 @@ a {
     right: 321px;
     background: #e2eddf;
     filter: blur(4px);
+    transition: 0.5s ease-in;
 }
 .process__img {
     display: none;
@@ -774,4 +775,9 @@ a {
     width: 450px;
     height: 444px;
     object-fit: cover;
+}
+/* Media */
+.media {
+    margin-top: 148px;
+    background: #143c3c;
 }
