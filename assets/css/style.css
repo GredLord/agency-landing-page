@@ -1121,6 +1121,9 @@ a {
     color: #c4c4c4;
     transform: rotate(180deg);
 }
+.footer-form__submit:hover {
+    cursor: pointer;
+}
 .footer__social {
     display: flex;
     align-items: center;
